@@ -21,7 +21,8 @@
  *
  *
  *
- * 3. Créez une classe Appartement qui étend de habitation, elle contiendra les propriétés:
+ * 3. Créez une classe Appartement qui étend de habitation, elle
+ * contiendra les propriétés:
  *    - garage ( booleen )
  *
  * Définissez tous les getters et les setters.
