@@ -6,10 +6,6 @@ class Habitation {
     private int $chambres;
     private int $pieces;
 
-    public function __construct(){
-
-    }
-
     /**
      * @return string
      */
