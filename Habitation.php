@@ -6,81 +6,65 @@ class Habitation {
     private int $chambres;
     private int $pieces;
 
-    /**
-     * @return string
-     */
+    // Construct
+    public function __construct($pays, $ville, $codepost, $chambres, $pieces ){
+        $this->setPays($pays);
+        $this->setVille($ville);
+        $this->setCodepost($codepost);
+        $this->setChambres($chambres);
+        $this->setPieces($pieces);
+    }
+
+    // Pays : get & set
     public function getPays(): string
     {
         return $this->pays;
     }
 
-    /**
-     * @param string $pays
-     */
     public function setPays(string $pays): void
     {
         $this->pays = $pays;
     }
 
-    /**
-     * @return string
-     */
+    // Ville : get & set
     public function getVille(): string
     {
         return $this->ville;
     }
 
-    /**
-     * @param string $ville
-     */
     public function setVille(string $ville): void
     {
         $this->ville = $ville;
     }
 
-    /**
-     * @return string
-     */
+    // Code postal : get & set
     public function getCodepost(): string
     {
         return $this->codepost;
     }
 
-    /**
-     * @param string $codepost
-     */
     public function setCodepost(string $codepost): void
     {
         $this->codepost = $codepost;
     }
 
-    /**
-     * @return int
-     */
+    // Chambres : get & set
     public function getChambres(): int
     {
         return $this->chambres;
     }
 
-    /**
-     * @param int $chambres
-     */
     public function setChambres(int $chambres): void
     {
         $this->chambres = $chambres;
     }
 
-    /**
-     * @return int
-     */
+    // Pieces : get & set
     public function getPieces(): int
     {
         return $this->pieces;
     }
 
-    /**
-     * @param int $pieces
-     */
     public function setPieces(int $pieces): void
     {
         $this->pieces = $pieces;

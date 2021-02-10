@@ -4,49 +4,43 @@ class Maison extends Habitation {
     private int $etage;
     private bool $garage;
 
-    /**
-     * @return bool
-     */
+    // Construct
+    public function __construct($pays, $ville, $codepost, $chambres, $pieces, $jardin, $etage, $garage)
+    {
+        parent::__construct($pays, $ville, $codepost, $chambres, $pieces);
+        $this->setJardin($jardin);
+        $this->setEtage($etage);
+        $this->setGarage($garage);
+    }
+
+    // Jardin : get & set
     public function isJardin(): bool
     {
         return $this->jardin;
     }
 
-    /**
-     * @param bool $jardin
-     */
     public function setJardin(bool $jardin): void
     {
         $this->jardin = $jardin;
     }
 
-    /**
-     * @return int
-     */
+    // Etage : get & set
     public function getEtage(): int
     {
         return $this->etage;
     }
 
-    /**
-     * @param int $etage
-     */
     public function setEtage(int $etage): void
     {
         $this->etage = $etage;
     }
 
-    /**
-     * @return bool
-     */
+    // Garage : get & set
     public function isGarage(): bool
     {
         return $this->garage;
     }
 
-    /**
-     * @param bool $garage
-     */
     public function setGarage(bool $garage): void
     {
         $this->garage = $garage;
